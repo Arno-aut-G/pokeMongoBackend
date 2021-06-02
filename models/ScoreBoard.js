@@ -7,4 +7,4 @@ const ScoreBoard = new Schema({
     winner: String
 })
 
-module.exports = moongoose.model('ScoreBoard', ScoreBoard)
+module.exports = mongoose.model('ScoreBoard', ScoreBoard)
