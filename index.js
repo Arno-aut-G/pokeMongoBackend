@@ -1,7 +1,10 @@
 const express = require('express')   //nom i express
 const app = express();
 const mongoose = require('mongoose')   // npm i mongoose
+const cors = require('cors')   //npm i cors
 const port = 3002 || process.env.PORT
+
+app.use(cors())
 require('dotenv').config()            // npm i dotenv
 
 const leaderRouter = require('./routes/leaderboard')
